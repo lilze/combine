@@ -34,7 +34,7 @@ class PluginOne(IPlugin):
                 if 'mail' in source:
                     data.append({'indicator':i, 'indicator_type':"IPv4", 'indicator_direction':self.DIRECTION,
                              'source_name':self.NAME, 'source':source, 'note':'Mailserver attack', 'date':current_date})
-				if 'apache' in source:
+		if 'apache' in source:
                     data.append({'indicator':i, 'indicator_type':"IPv4", 'indicator_direction':self.DIRECTION,
                              'source_name':self.NAME, 'source':source, 'note':'Apache/RFI Attack', 'date':current_date})
                 if 'imap' in source:
@@ -43,7 +43,7 @@ class PluginOne(IPlugin):
                 if 'ftp' in source:
                     data.append({'indicator':i, 'indicator_type':"IPv4", 'indicator_direction':self.DIRECTION,
                              'source_name':self.NAME, 'source':source, 'note':'FTP Attack', 'date':current_date})
-				if 'bots' in source:
+		if 'bots' in source:
                     data.append({'indicator':i, 'indicator_type':"IPv4", 'indicator_direction':self.DIRECTION,
                              'source_name':self.NAME, 'source':source, 'note':'IP Bot', 'date':current_date})
                 if 'strongips' in source:
