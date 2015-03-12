@@ -28,7 +28,7 @@ class PluginOne(IPlugin):
         for line in response.splitlines():
             if not line.startswith('#') and not line.startswith('/') and not line.startswith('Export date') and len(line) > 0:
                 i = line.split()[0]
-                 if 'ssh' in source:
+                if 'ssh' in source:
                     data.append({'indicator':i, 'indicator_type':"IPv4", 'indicator_direction':self.DIRECTION,
                              'source_name':self.NAME, 'source':source, 'note':'SSH Attack', 'date':current_date})
                 if 'mail' in source:
